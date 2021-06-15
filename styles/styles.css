@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root {
+    --color-darkcyan: hsl(185, 75%, 39%);
+    --color-vd-desatured-blue: hsl(229, 23%, 23%);
+    --color-grayish-blue: hsl(227, 10%, 46%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background: var(--color-darkcyan);
+}
+
+.container {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg1 {
+    position: absolute;
+    bottom: 35%;
+    right: 55%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.bg2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: z-index;
+    z-index: -1;
+}
+
+.card {
+    width: 400px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.336);
+    background: white;
+}
+
+.card__header img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.card__img {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.prefil {
+    position: absolute;
+}
+
+.card__imgprofile {
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px white;
+}
+
+.card__info {
+    text-align: center;
+}
+
+.card__infoname {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-vd-desatured-blue);
+    padding: 0 8px;
+    display: inline;
+}
+
+.card__infoage {
+    color: var(--color-grayish-blue);
+    display: inline;
+}
+
+.card__infocity {
+    margin: 15px 0;
+    color: var(--color-grayish-blue);
+    display: block;
+}
+
+.card__bottom {
+    text-align: center;
+}
+
+.card__bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    grid-auto-flow: column;
+    margin-top: 20px;
+}
+
+.value {
+    font-size: 18px;
+    color: var(--color-vd-desatured-blue);
+    padding: 10px;
+}
+
+.descripcion {
+    font-size: 11px;
+    color: var(--color-grayish-blue);
+}
+
+.line {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--color-grayish-blue);
+}
+
+@media screen and (max-width: 420px) {
+    .card {
+        width: 85%;
+        margin: auto;
+        height: 385px;
+    }
+    .bg2 {
+        left: 40%;
+        top: 42%;
+    }
+}
